@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="contain2">
+        <div id ="box2">
+            <div class="timer">
+                <p id="min">02</p>
+                <p>:</p>
+                <p id="sec">00</p>
+            </div>
+            <div class="showquiz">
+                <h3 id="Questionnum"></h3>
+
+                <h1 id="Questions"></h1>
+                <div class="optinput">
+                    <input type="radio" value="1" name="opt" onclick="enable()" />
+                    <span id="option1"></span>
+
+                    <input type="radio" value="2" name="opt" onclick="enable()" />
+                    <span id="option2"></span>
+
+                    <input type="radio" value="3" name="opt" onclick="enable()" />
+                    <span id="option3"></span>
+
+                    <input type="radio" value="4" name="opt" onclick="enable()" />
+                    <span id="option4"></span>
+                </div>
+            </div>
+            <div class="nextbtn">
+                <button id="nextbutton" disabled onclick="next()" class="Nextbutton">Next</button>
+            </div>
+            <div class="resultbtn">
+                <button id="resultbutton" disabled onclick="result()" class="hide">result</button>
+            </div>
+        </div>
+            <div class="resulttable" id="showresult">
+                <table>
+                    <tr>
+                        <td>Mark obtained</td>
+                        <td id="marks"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Correct Answer</td>
+                        <td id="Correctans"></td>
+                    </tr>
+                    <tr>
+                        <td>Wrong Answer</td>
+                        <td id="Wrongans"></td>
+                    </tr>
+                    <tr>
+                        <td>Persentage</td>
+                        <td id="Persentage"></td>
+                    </tr>
+                    <tr>
+                        <td>Result</td>
+                        <td id="result"></td>
+
+
+                </table>
+                <div class="twobtn">
+                    <button class="trybtn"><a href="quiz.html">Try Again</a></button>
+                    <button class="homebtn"><a href="index.html">Home</a></button>
+                </div>
+
+
+
+            </div>
+       
+    </div>
+
+
+
+        <script src="app.js"></script>
+</body>
+
+</html>
